@@ -40,6 +40,22 @@ img {
 .flex > div:first-child {
   margin-left: 20px;
 }
+
+header {
+  position: relative;
+  background-image: url('./images/red-vector.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+header .container .flex > div:first-child img {
+  margin-left: 25%;
+}
+
+header .container .flex > div:nth-child(2) {
+  padding: 0 16px;
+}
+
 /*Nav styling*/
 
 nav {
@@ -85,7 +101,7 @@ h2 {
 
 p {
   font-size: 18px;
-  margin-bottom: 12px;
+  margin-bottom: 24px;
 }
 li {
   font-size: 18px;
@@ -145,4 +161,76 @@ footer {
 
 footer p {
   text-align: center;
+}
+
+footer a {
+  text-decoration: underline;
+  color: #fef7e5;
+}
+
+@media screen and (max-width: 768px) {
+  
+  body {
+    text-align: center;
+  }
+
+  header .container .flex > div:first-child img {
+    margin: 24px 0 24px 0;
+  }
+
+  header form {
+    flex-direction: column;
+  }
+  header form input {
+    flex: 1;
+  }
+
+  header form button {
+    width: 100%;
+    margin-top: 16px;
+    margin-left: 0;
+  }
+
+  .testimonials {
+    margin: 16px 0;
+    width: 100%;
+  }
+
+  .sign-up {
+    padding: 32px 0;
+  }
+
+  .sign-up form {
+    width: 100%;
+  }
+
+  .sign-up form {
+    flex: 1;
+  }
+  
+  .sign-up form button {
+    width: 100%;
+    margin-top: 16px;
+    margin-left: 0;
+  }
+
+  h1 {
+    margin: 24px 0;
+  }
+  p {
+    padding: 24px 0;
+  }
+
+  .flex{
+    flex-direction: column;
+  }
+
+  li {
+    text-align: left;
+  }
+
+  ul {
+    margin-bottom: 48px;
+  }
+  
 }
