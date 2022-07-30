@@ -32,14 +32,6 @@ img {
   flex: 1;
 }
 
-.flex > div:first-child {
-  margin-right: 20px;
-}
-
-.flex > div:first-child {
-  margin-left: 20px;
-}
-
 header {
   position: relative;
   padding: 50px 0 0 0;
@@ -51,6 +43,7 @@ header {
 header .container .flex div:first-child {
   display: flex;
   justify-content: center;
+  padding: 0 20px;
 }
 
 header .container .flex > div:first-child img {
@@ -59,7 +52,18 @@ header .container .flex > div:first-child img {
 }
 
 header .container .flex > div:nth-child(2) {
-  padding: 0 16px;
+  padding: 24px;
+}
+
+.mentorship-benefits .container .flex div:nth-child(2) {
+display: flex;
+justify-content: center;
+padding: 0 20px;
+}
+
+.mentorship-benefits .container .flex div:nth-child(2) img{
+width: 75%;
+height: auto;
 }
 
 /*Nav styling*/
@@ -73,6 +77,11 @@ nav {
 /*Form styling*/
 form {
   display: flex;
+}
+
+label {
+display: block;
+margin-bottom: 12px;
 }
 
 input {
@@ -104,8 +113,14 @@ h1 {
 }
 
 h2 {
-  margin: 12px 0 24px 0;
+  margin: 12px 0 32px 0;
   font-size: 48px;
+  text-align: center;
+}
+
+.mentorship-benefits .container .flex ul {
+  display: inline-block;
+  padding: 0 32px;
 }
 
 p {
@@ -123,9 +138,17 @@ li {
 
 .testimonials {
   background-color: #fef7e5;
-  padding: 42px 24px;
+  padding: 32px 24px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  margin: 0 20px;
+  height: auto;
+}
+
+.testimonial-cards .container .flex .testimonials > div {
+justify-content: center;
+align-items: center;
+
 }
 
 .testimonial-name {
@@ -162,6 +185,13 @@ li {
   width: 50%;
 }
 
+.sign-up p {
+padding: 0 32px;
+text-align: left;
+}
+
+/*Footer styling*/
+
 footer {
   background-color: #393d67;
   color: #fef7e5;
@@ -184,7 +214,7 @@ footer a {
 
   header {
     background-position-x: -180%;
-    background-position-y: -175%;
+    background-position-y: -336%;
   }
 
   header .container .flex > div:first-child img {
@@ -214,12 +244,13 @@ footer a {
 
   .sign-up {
     padding: 32px 0;
-  }
-
-  .sign-up form {
-    display: inline-block;
     width: 100%;
   }
+
+  .sign-up .container .flex div:nth-child(2) {
+  width: 100%;
+  padding: 0 20px;
+}
 
   .sign-up form button {
     width: 100%;
@@ -228,11 +259,13 @@ footer a {
   }
 
   .sign-up form input {
+    display: inline-block;
     width: 100%;
   }
 
   .sign-up p {
     margin-bottom: 40px;
+    text-align: center;
   }
 
   h1 {
@@ -242,6 +275,7 @@ footer a {
 
   h2 {
     font-size: 24px;
+    margin: 24px 0;
   }
 
   p {
@@ -285,5 +319,6 @@ h3 {
   margin: 12px 0;
 }
 
-p {
+.sign-up p {
+  text-align:left;
 }
