@@ -107,7 +107,12 @@ button {
 
   font-size: 1em;
 }
-
+button:hover {
+  background-color: #393d67;
+  border: 1px solid transparent;
+  cursor: pointer;
+  }
+  
 h1 {
   margin: 24px 0;
   padding: 0 26px 0 0;
