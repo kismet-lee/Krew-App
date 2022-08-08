@@ -163,6 +163,26 @@ text-align: center;
   font-weight: 600;
 }
 
+.quote-block{
+background-color: #393d67;
+color: #fef7e5;
+padding: 64px 24px;
+border-radius: 4px;
+max-width: 100%;
+margin: 0 auto;
+text-align: center;
+}
+
+.quote-block > p {
+margin: 0 auto;
+margin-bottom: 16px;
+width: 85%;
+}
+.quote-name {
+display: block;
+text-align: center;
+font-weight: 600;
+}
 .sign-up {
   background-color: #fef7e5;
   position: relative;
