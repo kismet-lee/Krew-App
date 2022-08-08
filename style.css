@@ -163,26 +163,49 @@ text-align: center;
   font-weight: 600;
 }
 
-.quote-block{
-background-color: #393d67;
-color: #fef7e5;
-padding: 64px 24px;
-border-radius: 4px;
-max-width: 100%;
-margin: 0 auto;
+.carousel {
+  position: relative;
+  margin: 48px 0;
+}
+
+.carousel_item {
+  height: 400px;
+  background: #393d67;
+  color: #fef7e5;
+  text-align: center;
+  padding: 48px;
+  border-radius: 4px;
+  display: none;
+}
+
+.carousel_item-selected {
+  display: block;
+}
+
+
+.carousel_nav {
+width: 100%;
+padding: 20px 0;
+position: absolute;
+bottom: 0;
+left: 0;
 text-align: center;
 }
 
-.quote-block > p {
-margin: 0 auto;
-margin-bottom: 16px;
-width: 85%;
+.carousel_button {
+width: 10px;
+height: 10px;
+display: inline-block;
+background: #fef7e5;
+border-radius: 50%;
+margin: 0 5px;
+cursor: pointer;
 }
-.quote-name {
-display: block;
-text-align: center;
-font-weight: 600;
+
+.carousel_button-selected {
+background: #ff0910;
 }
+
 .sign-up {
   background-color: #fef7e5;
   position: relative;
