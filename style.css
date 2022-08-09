@@ -6,6 +6,7 @@
 }
 body {
   font-family: 'Raleway', sans-serif;
+  background: #FFFBF2;
   color: #393d67;
   font-size: 1.2em;
   margin: 0;
@@ -159,9 +160,13 @@ li {
 text-align: center;
 }
 
-.testimonial-name {
+.span-name {
+  display: block;
   font-weight: 600;
+  text-align: center;
 }
+
+/*Carousel styling*/
 
 .carousel {
   position: relative;
@@ -179,7 +184,9 @@ text-align: center;
 }
 
 .carousel_item-selected {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 
