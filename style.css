@@ -213,6 +213,7 @@ cursor: pointer;
 background: #ff0910;
 }
 
+/*Sign up section*/
 .sign-up {
   background-color: #fef7e5;
   position: relative;
@@ -257,6 +258,24 @@ footer p {
 footer a {
   text-decoration: underline;
   color: #fef7e5;
+}
+
+/*Scrollbar*/
+
+::-webkit-Scrollbar {
+width: 16px;
+}
+
+::-webkit-Scrollbar-track {
+  background: #fef7e5 ;
+}
+
+::-webkit-Scrollbar-thumb {
+  background: #393d67;
+}
+
+::-webkit-Scrollbar-thumb:hover {
+background: #ff0910;
 }
 
 /* Tablets and below */
